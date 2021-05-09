@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M7 Nivell1 Exercici 4</title>
+</head>
+<body>
+
+    <!--Crea una variable nota_examen juntament amb un alert que ens digui si l’examen ha estat aprovat o no juntament amb la nota. (caldrà utilitzar un condicional IF)-->
+    <script>
+        let nota_examen=prompt("Introdueix la nota, sis plau");
+
+        if((nota_examen >= 5) && (nota_examen < 10)) {
+            window.alert('Examen aprobat amb nota: ' + nota_examen + '.');
+        } 
+        else if ((nota_examen < 5) && (nota_examen >0 )) {
+            window.alert('Examen suspes amb nota: ' + nota_examen + '.');
+        }
+        else {
+            window.alert('La nota: ' + nota_examen + ', introduïda no es correcta.');
+       
+        }
+
+
+        
+
+
+    </script>
+   
+</body>
+</html>
