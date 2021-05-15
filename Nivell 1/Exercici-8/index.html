@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>M7 N1 Exercici 8</title>
 </head>
-<body>
+
 
     <!--Crea una funció anomenada calculadora que tingui com a entrada els següents paràmetres: operador, valor1 i valor2. 
 Estructura de la funció que faci sumes, restes i multiplicacions. El resultat haurà de ser mostrar per pantalla.
@@ -19,33 +19,56 @@ Estructura de la funció que faci sumes, restes i multiplicacions. El resultat h
 			
 			var resultat = calculadora('resta',40,20);-->
 
-     <script>
-         // Variables
-         let num1 =Number(prompt("Introdir el primer nº, sis plau."));
-               
-         let operacio = prompt("Introdir operació a realitzar, sis plau.", "suma+ resta- divisio/ multiplicació*");
+            <script>
+                //Variables
+                let valor1 = Number(prompt("num1"));
                 
-         let num2 =Number(prompt("Introdir el segon nº, sis plau."));
-         
-         
-        //Condicionales operaciones
-         if (operacio == "+") {
-             document.write("El resultat de la suma és: " + (num1 + num2) + ".");
-         }
-         else if (operacio == "-") {
-            document.write("El resultat de la resta és: " + (num1 - num2) + ".");
-         }
+                let valor2 = Number(prompt("num2"));
+                
+                let operador = prompt("operacio");
+                
 
-         else if (operacio == "*") {
-            document.write("El resultat de la multiplicació és: " + (num1 * num2) + ".");
-         }
+                
+       
+       
+                // Declaración de la función
+                function calculadora() {
+                    if (operador == "+") {
+                     suma = (valor1 + valor2);
+                     operador = suma;
+                      
+                    }
+                    else if (operador == "-") {
+                      resta = (valor1 - valor2);
+                      operador = resta;
+       
+                    }
+                    else if (operador == "*") {
+                      multi = (valor1 * valor2);
+                      operador = multi;
+       
+                    }
+                    else if (operador == "/") {
+                     divi =  (valor1 / valor2);
+                     operador = divi;
+       
+                    }
+                }
+       
+                let resultat = calculadora(operador, valor1, valor2);
+               
+               document.write (operador);
+       
+       
+            </script>    
+            
 
-         else if (operacio == "/") {
-            document.write("El resultat de la divisió és: " + (num1 / num2) + ".");
-         }
+            
+
+           
 
 
-     </script>       
+       
     
 </body>
 </html>
