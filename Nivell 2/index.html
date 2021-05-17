@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M7 N2 Exercici 1</title>
+  <script src="js/calculadora.js"></script>
+  <link href="styles/calculadora.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
+  <form onsubmit="event.preventDefault()">
+    <h1>Calculadora nivell 2.</h1>
+
+    <p>Escriure el primer nº, sis plau. <input type="text" name="numero1" id="numero1"></p>
+
+    <p>Escriure el segon nº, sis plau. <input type="text" name="numero2" id="numero2"></p>
+
+
     
+      <input type="radio" name="operacio" id="suma">Suma
+      <input type="radio" name="operacio" id="resta">Resta
+      <input type="radio" name="operacio" id="multi">Multiplicació
+      <input type="radio" name="operacio" id="divi">Divisió<br><br>
+
+      <button type="button" onclick="calculadora();" value="Resultat">Resultat</button>
+  </form>
+  <p id="resolucio"></p>
 </body>
+
 </html>
