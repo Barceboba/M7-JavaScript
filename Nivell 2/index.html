@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M7 N1 Exercici 8</title>
+</head>
+
+
+<!--Crea una funció anomenada calculadora que tingui com a entrada els següents paràmetres: operador, valor1 i valor2. 
+Estructura de la funció que faci sumes, restes i multiplicacions. El resultat haurà de ser mostrar per pantalla.
+
+		
+			function calculadora( __, __, __)
+			{
+			……...
+			}
+			
+			var resultat = calculadora('resta',40,20);-->
+
+<script>
+  //Variables
+  let valor1 = Number(prompt("Introduir el primer núm., sis plau."));
+  let operador = prompt("Introduir signe de l'operació.");
+  let valor2 = Number(prompt("Introduir el segon núm., sis plau."));
+
+
+
+
+
+
+
+  // Declaración de la función
+  function calculadora() {
+    if (operador == "+") {
+      suma = (valor1 + valor2);
+      operador = suma;
+
+    } else if (operador == "-") {
+      resta = (valor1 - valor2);
+      operador = resta;
+
+    } else if (operador == "*") {
+      multi = (valor1 * valor2);
+      operador = multi;
+
+    } else if (operador == "/") {
+      if (valor2 === 0) {
+        alert('ERROR!, no és possible divisor zero.');
+        operador = ('ERROR!');
+      } else {
+        divi = (valor1 / valor2);
+        operador = divi;
+      }
+    }
+  }
+
+  let resultat = calculadora(operador, valor1, valor2);
+
+  document.write("El resultat de l'operació és: " + operador + ".");
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
